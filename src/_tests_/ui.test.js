@@ -8,8 +8,8 @@ import App from "../App";
 
 describe('App', () => {
 
-test('title displays correctly', async () => {
-    expect('title').toContain('employee');
-});
+// test('title displays correctly', async () => {
+//     expect('title').toContain('employee');
+// });
 
 });
