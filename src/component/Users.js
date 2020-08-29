@@ -1,7 +1,7 @@
 import React from "react";
 
-const User = () => {
+const Users = () => {
     console.log("this works")
 }
 
-export default User
+export default Users
