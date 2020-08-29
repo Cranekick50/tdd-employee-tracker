@@ -9,7 +9,8 @@ import Title from "../component/Title";
 
 describe('App', () => {
 test('title displays correctly', () => {
-    expect(<Title />).toContain('employee');
+    render (<Title />)
+    expect(screen.getByLabelText('h1')).toContain('employee');
 });
 
 });
