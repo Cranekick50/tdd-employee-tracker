@@ -8,9 +8,8 @@ import App from "../App";
 import Title from "../component/Title";
 
 describe('App', () => {
-
 test('title displays correctly', async () => {
-    expect('title').toContain('employee');
+    expect(Title).toContain('employee');
 });
 
 });
