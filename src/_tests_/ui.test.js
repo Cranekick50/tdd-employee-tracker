@@ -21,8 +21,8 @@ test('title component renders', () => {
 
 describe('App', () => {
     test('title component renders', () => {
-        const wrapper = shallow(<User />)
-        expect(wrapper.find('Title').length).toEqual(1);
+        const wrapper = shallow(<App />)
+        expect(wrapper.find('User').length).toEqual(1);
     });
     
     });
