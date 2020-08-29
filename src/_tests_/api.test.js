@@ -10,18 +10,4 @@ import App from '../App'
 
 configure({ adapter: new Adapter() });
 
-describe('App', () => {
-test('title component renders', () => {
-    const wrapper = shallow(<App />)
-    expect(wrapper.find('Title').length).toEqual(1);
-});
 
-});
-
-describe('App', () => {
-    test('title component renders', () => {
-        const wrapper = shallow(<User />)
-        expect(wrapper.find('Title').length).toEqual(1);
-    });
-    
-    });
