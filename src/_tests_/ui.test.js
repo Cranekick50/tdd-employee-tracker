@@ -22,7 +22,7 @@ test('title component renders', () => {
 describe('App', () => {
     test('title component renders', () => {
         const wrapper = shallow(<App />)
-        expect(wrapper.find('User').length).toEqual(1);
+        expect(wrapper.find('Users').length).toEqual(1);
     });
     
     });

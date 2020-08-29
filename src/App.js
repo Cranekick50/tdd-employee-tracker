@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Title from './component/Title';
-import User from './component/User';
+import Users from './component/Users';
 
 function App() {
   return (
