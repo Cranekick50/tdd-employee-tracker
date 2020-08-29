@@ -4,13 +4,15 @@ import React from "react";
 import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 // add custom jest matchers from jest-dom
 import '@testing-library/jest-dom/extend-expect';
-import App from "../App";
-import Title from "../component/Title";
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 describe('App', () => {
-test('title displays correctly', () => {
-    render (<Title />)
-    expect(screen.getByLabelText('h1')).toContain('employee');
+test('title component renders', () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper.find('Title').length).toEqual(1);
 });
 
 });
