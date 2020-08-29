@@ -5,6 +5,7 @@ import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 // add custom jest matchers from jest-dom
 import '@testing-library/jest-dom/extend-expect';
 import App from "../App";
+import Title from "../component/Title";
 
 describe('App', () => {
 

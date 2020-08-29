@@ -3,7 +3,7 @@ import React from "react";
 
 const Title = () => {
     return(
-        <title><h1>Employee Directory</h1></title>
+        <h1 class="title">Employee Directory</h1>
     )
 }
 
