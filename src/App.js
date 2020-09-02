@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Title from './component/Title'
+import Title from './component/Title';
+import Users from './component/Users';
 
 function App() {
   return (
     <div className="App">
-      {/* <title><h1>Employee Directory</h1></title> */}
       <Title />
+      <Users />
     </div>
   );
 }
