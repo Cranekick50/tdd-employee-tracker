@@ -42,7 +42,8 @@ const Users = () => {
   //   console.log(firstName);
 
   return (
-    <div style={{ margin: "0 10%" }}>
+
+    <div data-testId='users' style={{ margin: "0 10%" }}>
       <form>
         <label>First Name</label>
         <input
@@ -62,10 +63,10 @@ const Users = () => {
 
       <Table striped bordered hover>
         <tr>
-          <th className="tableHeader">First Name</th>
-          <th className="tableHeader">Last Name</th>
-          <th className="tableHeader">Phone#</th>
-          <th className="tableHeader">Email</th>
+          <th data-testId='column-firstname' className="tableHeader">First Name</th>
+          <th data-testId='column-lastname' className="tableHeader">Last Name</th>
+          <th data-testId='column-phone' className="tableHeader">Phone#</th>
+          <th data-testId='column-email' className="tableHeader">Email</th>
         </tr>
         {filteredUsers.map((user, index) => {
           return (
